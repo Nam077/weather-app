@@ -50,33 +50,218 @@
                 <li><a href="about.html">Giới thiệu</a></li>
                 <li><a href="contact.html">Hỗ trợ</a></li>
                 <li><a class="get-a-quote" href="login.html">Đăng nhập</a></li>
+
             </ul>
         </nav><!-- .navbar -->
 
     </div>
 </header><!-- End Header -->
 <!-- End Header -->
-<!-- ======= Hero Section ======= -->
-<section id="hero" class="hero d-flex align-items-center">
-    <div class="container">
-        <div class="row gy-4 d-flex justify-content-between">
-            <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                <h2 data-aos="fade-up">Welcome to <span>Weather Forecast</span></h2>
-                <p data-aos="fade-up" data-aos-delay="100">Nhập tên thành phố bạn muốn xem dự báo thời tiết</p>
-                <form action="#" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
-                    <input type="text" class="form-control" placeholder="Search">
-                    <button type="submit" class="btn btn-primary">Search</button>
-                </form>
 
+<main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs">
+        <div class="page-header d-flex align-items-center" style="background-image: url('assets/img/page-header.jpg');">
+            <div class="container position-relative">
+                <div class="row d-flex justify-content-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-12">
+                                <!-- Thêm thanh tìm kiếm -->
+
+                            </div>
+                        </div>
+                        <!-- Giao diện hiển thị thông tin thời tiết sẽ được thêm ở đây -->
+                    </div>
+                </div>
             </div>
-
-            <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
-                <img src="assets/img/hero-img.svg" class="img-fluid mb-3 mb-lg-0" alt="">
-            </div>
-
         </div>
-    </div>
-</section><!-- End Hero Section -->
+    </div><!-- End Breadcrumbs -->
+
+
+    <!-- ======= Weather Section ======= -->
+    <!-- ======= Weather Section ======= -->
+    <section id="weather" class="weather" style="background-color:  #0B131E; color: white;">
+        <div class="container">
+
+            <div class="row">
+                <!-- Thẻ card cho thông tin thời tiết -->
+                <!-- Thẻ card cho thông tin thời tiết -->
+                <div class="col-md-8">
+                    <div class="card p-4" style="background-color: #0E1D34; color: white; height: 100%;">
+                        <div class="row align-items-center ">
+                            <div class="col-md-12">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control  " placeholder="Nhập tên thành phố"
+                                           aria-label="Recipient's username" aria-describedby="button-addon2" id="citySearchName">
+<!--                                    button icon-->
+                                    <button class="btn btn-outline-secondary" type="button" id="searchButton">
+                                        <i class="bi bi-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Cột cho biểu tượng thời tiết và nhiệt độ -->
+                            <div class="col-md-6 mt-4">
+                                <h3 id="cityName">Hà Nội</h3>
+                                <p id="localTime">Thứ 2, 20/09/2021</p>
+                                <p id="weatherDescription">Mây rải rác</p>
+                                <div>
+                                    <p class="temp" style="font-size: 3rem;" id="temp">30°C</p>
+                                </div>
+                            </div>
+                            <!-- Cột cho tên thành phố -->
+                            <div class="col-md-6 text-center">
+                                <div>
+                                    <img src="//cdn.weatherapi.com/weather/64x64/night/116.png" alt="Weather Icon"
+                                         style="width: 100px;" id="weatherIcon">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Thêm thông tin thời tiết khác ở đây -->
+                        <div class="d-flex justify-content-between mt-4">
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <p>Lượng mưa</p>
+                                    <h4 id="precip">0 mm</h4>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <p>Độ ẩm</p>
+                                    <h4 id="humidity">0%</h4>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <p>Tốc độ gió</p>
+                                    <h4 id="windSpeed">0 km/h</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Thẻ card cho tên thành phố -->
+                <div class="col-md-4">
+                    <div class="card p-4" style="background-color: #0E1D34; color: white; height: 100%;">
+                        <!-- Thêm tên thành phố ở đây -->
+                        <!-- Thêm các yếu tố khác ở đây -->
+                        <!-- Thêm các yếu tố khác ở đây -->
+                        <div class="row mt-4">
+                            <!-- Mô tả thời tiết -->
+                            <div class="col-md-12">
+                                <hr>
+                                <p>Nhiệt độ cảm giác: <b><span id="feelsLike">27.1°C</span></b></p>
+                                <hr>
+                                <p>Hướng gió: <b><span id="windDirection">NNW</span></b></p>
+                                <hr>
+                                <p>Áp suất không khí: <b><span id="pressure">1013 mb</span></b></p>
+                                <hr>
+                                <p>Lượng mưa: <b><span id="precipitation">0.06 mm</span></b></p>
+                                <hr>
+                                <p>Tầm nhìn: <b><span id="visibility">8 km</span></b></p>
+                                <hr>
+                                <p>Tia UV: <b><span id="uvIndex">1</span></b></p>
+                                <hr>
+                                <p>Gió giật: <b><span id="windGust">18.5 km/h</span></b></p>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+                <!-- Thẻ card cho thông tin thời tiết các ngày trong tuần -->
+
+
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <div class="card p-4" style="background-color: #0E1D34; color: white; height: 100%;">
+                        <div class="row">
+                            <!-- Sử dụng vòng lặp để tạo card cho từng ngày trong tuần -->
+                            <div class="col">
+                                <div class="card text-center" style="background-color: #202B3B; color: white; border: none">
+                                    <div class="card-body">
+                                        <img src="//cdn.weatherapi.com/weather/64x64/night/116.png" alt="Weather Icon" class="mx-auto" style="width: 50px;">
+                                        <h5 class="card-title">Thứ 2</h5>
+                                        <p class="card-text">29°C</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card text-center" style="background-color: #202B3B; color: white; border: none">
+                                    <div class="card-body">
+                                        <img src="//cdn.weatherapi.com/weather/64x64/night/116.png" alt="Weather Icon" class="mx-auto" style="width: 50px;">
+                                        <h5 class="card-title">Thứ 3</h5>
+                                        <p class="card-text">30°C</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card text-center" style="background-color: #202B3B; color: white; border: none">
+                                    <div class="card-body">
+                                        <img src="//cdn.weatherapi.com/weather/64x64/night/116.png" alt="Weather Icon" class="mx-auto" style="width: 50px;">
+                                        <h5 class="card-title">Thứ 4</h5>
+                                        <p class="card-text">28°C</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card text-center" style="background-color: #202B3B; color: white; border: none">
+                                    <div class="card-body">
+                                        <img src="//cdn.weatherapi.com/weather/64x64/night/116.png" alt="Weather Icon" class="mx-auto" style="width: 50px;">
+                                        <h5 class="card-title">Thứ 5</h5>
+                                        <p class="card-text">31°C</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card text-center" style="background-color: #202B3B; color: white; border: none">
+                                    <div class="card-body">
+                                        <img src="//cdn.weatherapi.com/weather/64x64/night/116.png" alt="Weather Icon" class="mx-auto" style="width: 50px;">
+                                        <h5 class="card-title">Thứ 5</h5>
+                                        <p class="card-text">31°C</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card text-center" style="background-color: #202B3B; color: white; border: none">
+                                    <div class="card-body">
+                                        <img src="//cdn.weatherapi.com/weather/64x64/night/116.png" alt="Weather Icon" class="mx-auto" style="width: 50px;">
+                                        <h5 class="card-title">Thứ 5</h5>
+                                        <p class="card-text">31°C</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card text-center" style="background-color: #202B3B; color: white; border: none">
+                                    <div class="card-body">
+                                        <img src="//cdn.weatherapi.com/weather/64x64/night/116.png" alt="Weather Icon" class="mx-auto" style="width: 50px;">
+                                        <h5 class="card-title">Thứ 5</h5>
+                                        <p class="card-text">31°C</p>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Weather Section -->
+
+    <!-- End Weather Section -->
+
+
+</main><!-- End #main -->
 
 <!-- ======= Footer ======= -->
 <footer id="footer" class="footer">
@@ -157,9 +342,11 @@
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 <script src="assets/vendor/aos/aos.js"></script>
 <script src="assets/vendor/php-email-form/validate.js"></script>
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
+
+<script src="assets/js/weather.js"></script>
 
 </body>
 
