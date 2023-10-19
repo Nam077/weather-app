@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1cbd596b-f710-440d-86ee-8a1d34739340" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/weather.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/validate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/weather.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/weather.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1696144123727</updated>
       <workItem from="1696144127115" duration="11323000" />
-      <workItem from="1697742736078" duration="10429000" />
+      <workItem from="1697742736078" duration="13040000" />
     </task>
     <servers />
   </component>
